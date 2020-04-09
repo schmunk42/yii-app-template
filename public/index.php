@@ -1,6 +1,6 @@
 <?php
 
-use hiqdev\composer\config\Builder;
+use Yiisoft\Composer\Config\Builder;
 use Yiisoft\Di\Container;
 use Yiisoft\Yii\Web\ServerRequestFactory;
 
