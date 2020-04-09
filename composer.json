@@ -71,20 +71,30 @@
         "yiisoft/log-target-file": "^3.0@dev",
         "yiisoft/rbac": "^3.0@dev",
         "yiisoft/view": "^3.0@dev",
-        "yiisoft/event-dispatcher": "^3.0@dev"
+        "yiisoft/event-dispatcher": "^3.0@dev",
+        "yiisoft/router-fastroute": "^3.0@dev",
+        "yiisoft/assets": "^1.0@dev",
+        "yiisoft/auth": "^3.0@dev"
     },
     "require-dev": {
         "foxy/foxy": "^1.0",
         "yiisoft/yii-debug": "^3.0@dev",
         "hiqdev/composer-config-plugin": "^1.0@dev"
     },
+    "autoload": {
+      "psr-4": {
+        "App\\": "src"
+      }
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "3.0.x-dev"
         },
+        "config-plugin-output-dir": "config/_generated",
         "config-plugin": {
             "common": "config/common.php",
-            "params": "config/params.php"
+            "params": "config/params.php",
+            "web": "./config/web.php"
         }
     },
     "config": {
